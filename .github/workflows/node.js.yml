@@ -20,12 +20,12 @@ jobs:
         with:
           # update the Node version to meet your needs
           node-version: 18
-          cache: npm
+          cache: yarn
 
       - name: Build
         run: |
-          npm ci
-          npm run build
+          yarn install
+          yarn build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
