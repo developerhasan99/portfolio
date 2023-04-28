@@ -9,10 +9,12 @@ import Passion from "./components/Service/Service";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Seo from "./components/Seo";
 
 function App() {
 	return (
 		<Provider>
+			<Seo />
 			<Header />
 			<Hero />
 			<About />
