@@ -43,7 +43,7 @@ const testimonials = [
 export const TestimonialsSection = () => {
   return (
     <div>
-      <SectionHeader />
+      {/* <SectionHeader /> */}
       <div>
         {testimonials.map((testimonial) => (
           <div key={testimonial.name} className="bg-gray-800 p-6 rounded-3xl">
