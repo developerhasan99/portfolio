@@ -28,17 +28,24 @@ jobs:
 
       - name: Deploy "out" directory to hostinger branch
         run: |
+          # Configure Git
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Fetch or create hostinger branch
           git fetch origin hostinger || git checkout --orphan hostinger
 
-          # Remove everything in the hostinger branch
+          # Remove all files from the hostinger branch
           git rm -rf .
 
-          # Only copy the build output from the "out" directory
+          # Copy only the build output from the out directory to the root of the branch
           cp -r out/* .
 
-          # Add and commit the changes
+          # Add the new files
           git add .
+
+          # Commit the changes
           git commit -m "Deploy latest build to hostinger"
+
+          # Force push to the hostinger branch
           git push origin HEAD:hostinger --force
