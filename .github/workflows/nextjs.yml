@@ -19,14 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "yarn"
 
-      - name: Install dependencies and build
-        run: |
-          yarn install
-          yarn build
+      - name: Install dependencies
+        run: yarn install
 
-      - name: Deploy to "hostinger" branch
+      - name: Build project
+        run: yarn build
+
+      - name: Deploy "out" directory to hostinger branch
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
