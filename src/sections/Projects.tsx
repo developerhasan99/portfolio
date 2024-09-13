@@ -1,26 +1,38 @@
+import ksiegowosc24 from "@/assets/images/ksiegowosc24.png";
+import onmarket from "@/assets/images/onmarket.png";
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
-import { Jersey_20 } from "next/font/google";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Rafsoft",
+    year: "2023",
+    title: "WooCommerce website Design, SEO and performance",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://ksiegowosc24.pl/",
+    image: ksiegowosc24,
+  },
+  {
+    company: "Onmarket",
+    year: "20223",
+    title: "Freelance Marketplace Creation, similar to Fiverr.",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://onmarket.ai/",
+    image: onmarket,
   },
   {
     company: "Innovative Co",
@@ -62,7 +74,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"
@@ -101,6 +113,7 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a
+                    target="_blank"
                     href={project.link}
                     className="bg-white text-gray-950 h-12 px-6 rounded-xl font-semibold flex md:inline-flex justify-center items-center gap-2 mt-8"
                   >
