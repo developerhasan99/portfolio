@@ -1,0 +1,26 @@
+# Enable mod_rewrite for routing
+RewriteEngine On
+
+# If the file or directory exists, serve it
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, serve index.html
+RewriteRule ^(.*)$ /index.html [L]
+
+# Ensure media (like images) are served correctly
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js)$">
+  Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# Handle CORS for images, fonts, and other assets
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|ttf|woff|woff2|eot|otf)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# Optionally, add Gzip compression for faster load times
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+</IfModule>
