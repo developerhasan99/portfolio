@@ -17,6 +17,7 @@ export default function Home() {
       <TestimonialsSection />
       <AboutSection />
       <ContactSection />
+      {/* Added Comment */}
       <Footer />
     </div>
   );
