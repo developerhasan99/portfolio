@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function ToolboxItems({
@@ -15,20 +16,24 @@ export default function ToolboxItems({
           itemsWrapperClassName
         )}
       >
-        {toolboxItems.map((tool) => (
-          <div
-            key={tool.title}
-            className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
-          >
-            <tool.icon className="size-10 fill-[url(#tech-icon-gradient)]" />
-            <svg className="size-0 absolute">
-              <linearGradient id="tech-icon-gradient">
-                <stop offset="0%" stopColor="rgba(110 231 183)" />
-                <stop offset="100%" stopColor="rgba(56 189 248)" />
-              </linearGradient>
-            </svg>
-            <span className="font-semibold">{tool.title}</span>
-          </div>
+        {[...new Array(2).fill(2)].map((_, idx) => (
+          <Fragment key={idx}>
+            {toolboxItems.map((tool) => (
+              <div
+                key={tool.title}
+                className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
+              >
+                <tool.icon className="size-10 fill-[url(#tech-icon-gradient)]" />
+                <svg className="size-0 absolute">
+                  <linearGradient id="tech-icon-gradient">
+                    <stop offset="0%" stopColor="rgba(110 231 183)" />
+                    <stop offset="100%" stopColor="rgba(56 189 248)" />
+                  </linearGradient>
+                </svg>
+                <span className="font-semibold">{tool.title}</span>
+              </div>
+            ))}
+          </Fragment>
         ))}
       </div>
     </div>

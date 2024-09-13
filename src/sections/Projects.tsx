@@ -7,6 +7,7 @@ import ArrowRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
+import { Jersey_20 } from "next/font/google";
 
 const portfolioProjects = [
   {
@@ -45,6 +46,18 @@ const portfolioProjects = [
     link: "https://youtu.be/Z7I5uSRHMHg",
     image: aiStartupLandingPage,
   },
+  {
+    company: "Quantum Dynamics",
+    year: "2023",
+    title: "AI Startup Landing Page",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://youtu.be/Z7I5uSRHMHg",
+    image: aiStartupLandingPage,
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -57,10 +70,13 @@ export const ProjectsSection = () => {
           description="See how I transformed concepts into engaging digital experiences."
         />
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
+              style={{
+                top: `calc(64px + ${projectIndex * 40}px)`,
+              }}
               key={project.title}
-              className="px-8 pt-8 pb-0 md:px-12 md:pt-12 lg:pt-16 lg:px-16 z-0"
+              className="px-8 pt-8 pb-0 md:px-12 md:pt-12 lg:pt-16 lg:px-16 z-0 sticky"
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
