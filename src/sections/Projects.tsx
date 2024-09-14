@@ -1,8 +1,8 @@
 import ksiegowosc24 from "@/assets/images/ksiegowosc24.png";
 import onmarket from "@/assets/images/onmarket.png";
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import ewanCorlett from "@/assets/images/ewan-corlett.png";
+import instagramAdsMockup from "@/assets/images/instagram-ads-mockup.png";
+import wpshopmaker from "@/assets/images/wpshopmaker.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -10,6 +10,42 @@ import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 
 const portfolioProjects = [
+  {
+    company: "Ewan Corlett",
+    year: "2024",
+    title: "Personal Branding Website For a Life Coach",
+    results: [
+      { title: "98% PSI Score" },
+      { title: "100% ON-Page SEO Score" },
+      { title: "Only Blocksy and Elementor is Used" },
+    ],
+    link: "https://ewancorlett.com/",
+    image: ewanCorlett,
+  },
+  {
+    company: "Socially Found",
+    year: "2024",
+    title: "Instagram Preview Tool",
+    results: [
+      { title: "Built Using React, Tailwind, ShadCN, Zustand" },
+      { title: "Highly optimized UI" },
+      { title: "100% Mobile Responsive" },
+    ],
+    link: "https://developerhasan99.github.io/instagram-ads-mockup/",
+    image: instagramAdsMockup,
+  },
+  {
+    company: "WP SHOP Maker",
+    year: "2024",
+    title: "A Website For WordPress E-Commerce Development Agency",
+    results: [
+      { title: "Pixel-perfect and UX optimized design" },
+      { title: "Fully Optimized for Speed (97% PSI)" },
+      { title: "100% ON-page SEO score" },
+    ],
+    link: "https://wpshopmaker.com/",
+    image: wpshopmaker,
+  },
   {
     company: "Rafsoft",
     year: "2023",
@@ -25,50 +61,14 @@ const portfolioProjects = [
   {
     company: "Onmarket",
     year: "20223",
-    title: "Freelance Marketplace Creation, similar to Fiverr.",
+    title: "Freelance Marketplace Creation, Similar to Fiverr",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Technologies: Laravel, Tailwind, Livewire used" },
+      { title: "User authentication, and multiple user role" },
+      { title: "Custom CMS for managing users and gigs" },
     ],
     link: "https://onmarket.ai/",
     image: onmarket,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
   },
 ];
 

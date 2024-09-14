@@ -12,33 +12,33 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Jasper Nickels",
+    position: "Mixing Engineer & Producer",
+    text: "Mehedi is highly skilled in his craft. If you want to deepen your understanding of the website program, his explanations are clear and insightful. The entire project progressed seamlessly under his guidance.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Shaine Caronel",
+    position: "Designer",
+    text: "I am delighted to share my fantastic experience working with Mehedi for mobile edits. His willingness to go the extra mile to ensure the job is executed impeccably is truly impressive.",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Bill Johnson",
+    position: "Founder & CEO, Evenrise",
+    text: "Mehedi did an excellent job on my WordPress project, showcasing his skills in both PHP and WordPress. His expertise was evident, and he delivered outstanding results. I'm highly pleased with his work!",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "Pooja Devi",
+    position: "Marketing manager at The Spot Martious",
+    text: "I recently had the privilege of working with Mehedi, an outstanding website developer, and I am thoroughly impressed with the exceptional quality of his work.",
     avatar: memojiAvatar4,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Rafal Morawiski",
+    position: "Founder of Rafsoft",
+    text: "Mehedi has been amazing. This is the 3rd project that we've worked together on and he has delivered every time. Highly recommend.",
     avatar: memojiAvatar5,
   },
 ];

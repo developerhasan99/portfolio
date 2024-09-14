@@ -11,8 +11,9 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  title: "Mehedi Hasan | Full Stack Web Developer 🧑🏻‍💻 Freelancer",
+  description:
+    "Hey! My name is Mehedi Hasan and I'm a UX Enthusiast with skills in Front-End and WordPress Development.",
 };
 
 export default function RootLayout({
