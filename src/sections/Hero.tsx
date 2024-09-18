@@ -133,8 +133,8 @@ export const HeroSection = () => {
             </div>
           </div>
           <div className="max-w-lg mx-aut">
-            <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-              Building Exception User Experiences
+            <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide capitalize">
+              I build websites for businesses
             </h1>
             <p className="mt-4 text-center text-white/60 md:text-lg">
               Hi, I am Mehedi Hasan. I specialize in transforming designs into
